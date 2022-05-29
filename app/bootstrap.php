@@ -1,4 +1,7 @@
 <?php
+    // Loading Config
+    require_once('config/config.php');
+
     //Loading the Libraries
     require_once 'libraries/core.php';
     require_once 'libraries/controller.php';
