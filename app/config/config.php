@@ -1,9 +1,9 @@
 <?php
     // DB Params
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'root');
-    define('DB_PASS', '');
-    define('DB_NAME', 'test_mvc');
+    define('DB_USER', '__YOUR_USER__');
+    define('DB_PASS', '__YOUR_PASSWORD__');
+    define('DB_NAME', '__YOUR_DBNAME__');
 
     // App Root
     /*
@@ -17,7 +17,7 @@
     define('APPROOT', dirname(dirname(__FILE__)));
 
     // URL Root
-    define('URLROOT', 'http://localhost/rinnegan');
+    define('URLROOT', '__YOUR_URL__');
 
     // Site Name
-    define('SiteName', 'Rinnegan');
+    define('SiteName', '__YOUR_SITENAME__');
