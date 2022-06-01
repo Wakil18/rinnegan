@@ -10,19 +10,27 @@
         protected $params = [];
 
         public function __construct(){
-            // print_r($this->getUrl());
             $url = $this->getUrl();
 
             // Look in the controller for the 1st value
-            if(file_exists('../app/controllers/' . ucwords($url[0]) . '.php')){
+            if(isset($url[0])){
+                if(file_exists('../app/controllers/' . ucwords($url[0]) . '.php')){
 
-                // If exixts, set as controller
-                $this->currentController = ucwords($url[0]);
-
-                // Unset 0 index
-                unset($url[0]);
-
+                    // If exixts, set as controller
+                    $this->currentController = ucwords($url[0]);
+    
+                    // Unset 0 index
+                    unset($url[0]);
+    
+                }
             }
+
+            // if(file_exists('../app/controllers/' . ucwords($url[0]) . '.php')){
+            //     // If exixts, set as controller
+            //     $this->currentController = ucwords($url[0]);
+            //     // Unset 0 index
+            //     unset($url[0]);
+            // }
 
             // Requiring the Controller
             require_once '../app/controllers/' . $this->currentController . '.php';

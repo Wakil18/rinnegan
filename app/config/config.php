@@ -1,4 +1,10 @@
 <?php
+    // DB Params
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+    define('DB_NAME', 'test_mvc');
+
     // App Root
     /*
     *This dirname function trims the last directory / returns the parent directory
@@ -8,7 +14,6 @@
     
     *By using define function the directory is put into a constant
     */
-
     define('APPROOT', dirname(dirname(__FILE__)));
 
     // URL Root
